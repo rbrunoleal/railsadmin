@@ -1,0 +1,21 @@
+<script type="text/javascript">
+  $(document).ready(function() {
+    var lTipo = $('#tipopessoa_select option:selected').text();
+    var lElementoFisica = document.getElementById('pessoa_pessoafisica_id_field');
+    if(lElementoFisica == null){
+      lElementoFisica = document.getElementById('favorecido_pessoa_attributes_pessoafisica_id_field'); 
+    }
+    var lElementoJuridica= document.getElementById('pessoa_pessoajuridica_id_field');
+    if(lElementoJuridica == null){
+      lElementoJuridica = document.getElementById('favorecido_pessoa_attributes_pessoajuridica_id_field'); 
+    }
+    if(lTipo == 'Física'){
+      lElementoFisica.style.display = 'block';
+      lElementoJuridica.style.display = 'none';
+    }
+    if(lTipo == 'Jurídica'){
+      lElementoFisica.style.display = 'none';
+      lElementoJuridica.style.display = 'block';
+    }
+  });
+</script>

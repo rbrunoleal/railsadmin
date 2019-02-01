@@ -1,0 +1,23 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  banco: one
+  agencia: MyString
+  agenciadigito: 1
+  conta: MyString
+  contadigito: 1
+  tipo: 1
+  realizacao: false
+  saldo: 9.99
+  ativo: false
+
+two:
+  banco: two
+  agencia: MyString
+  agenciadigito: 1
+  conta: MyString
+  contadigito: 1
+  tipo: 1
+  realizacao: false
+  saldo: 9.99
+  ativo: false

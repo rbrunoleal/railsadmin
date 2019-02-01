@@ -1,0 +1,13 @@
+<script type="text/javascript">
+  $('body').on('change', '#tipopessoa_select', function() { 
+    var selecionado = $(this).text();
+    if(selecionado == 'Física'){
+      document.getElementById('favorecido_pessoa_attributes_pessoafisica_id_field').style.display = 'block';
+      document.getElementById('favorecido_pessoa_attributes_pessoajuridica_id_field').style.display = 'none';
+    }
+    if(selecionado == 'Jurídica'){
+      document.getElementById('favorecido_pessoa_attributes_pessoajuridica_id_field').style.display = 'block';
+      document.getElementById('favorecido_pessoa_attributes_pessoafisica_id_field').style.display = 'none';
+    }
+  })
+</script>
